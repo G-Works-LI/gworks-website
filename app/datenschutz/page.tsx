@@ -56,10 +56,10 @@ export default function DatenschutzPage() {
                   <br />
                   E-Mail:{" "}
                   <a
-                    href="mailto:fabian.graf@live.de"
+                    href="mailto:info@gworks.li"
                     className="font-semibold text-orange-700 underline underline-offset-4"
                   >
-                    fabian.graf@live.de
+                    info@gworks.li
                   </a>
                 </p>
               </section>

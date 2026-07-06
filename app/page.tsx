@@ -410,7 +410,7 @@ export default function Home() {
 
             <div className="flex min-w-0 flex-col gap-3 md:gap-4">
               <a
-                href="mailto:fabian.graf@live.de"
+                href="mailto:info@gworks.li"
                 className="w-full rounded-full bg-[#151515] px-7 py-4 text-center font-semibold text-white transition hover:bg-black"
               >
                 Anfrage per E-Mail starten

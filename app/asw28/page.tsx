@@ -540,7 +540,7 @@ export default function ASW28Page() {
           </p>
 
           <a
-            href="mailto:fabian.graf@live.de"
+            href="mailto:info"
             className="mt-8 inline-flex w-full justify-center rounded-full bg-orange-500 px-7 py-4 font-black text-black no-underline transition hover:bg-orange-400 sm:w-auto"
           >
             E-Mail senden
