@@ -1,5 +1,4 @@
-const rcLink = "https://www.gworks.ch";
-
+const rcLink = "/asw28";
 export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#f5f3ee] text-[#151515]">
