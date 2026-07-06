@@ -151,10 +151,8 @@ export default function Home() {
                       Arbeitsweise
                     </p>
 
-                    <h2 className="mt-3 text-2xl font-black leading-tight md:text-3xl">
-                      Von der Idee
-                      <br />
-                      zum fertigen Bauteil.
+                    <h2 className="mt-3 max-w-[15rem] text-2xl font-black leading-[1.08] sm:max-w-none md:text-3xl">
+                      Von der Idee zum fertigen Bauteil.
                     </h2>
                   </div>
 
@@ -467,14 +465,19 @@ function ProcessLine({
   text: string;
 }) {
   return (
-    <div className="grid min-w-0 grid-cols-[44px_1fr] gap-3 rounded-2xl border border-black/10 bg-white/80 p-4 shadow-sm md:grid-cols-[48px_1fr] md:gap-4">
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-500 text-sm font-black text-white">
+    <div className="flex min-w-0 flex-col gap-4 rounded-2xl border border-black/10 bg-white/80 p-4 shadow-sm sm:flex-row sm:items-start">
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-orange-500 text-sm font-black text-white sm:h-10 sm:w-10">
         {number}
       </div>
 
       <div className="min-w-0">
-        <h3 className="font-black">{title}</h3>
-        <p className="mt-1 text-sm leading-6 text-black/55">{text}</p>
+        <h3 className="break-words text-lg font-black leading-tight sm:text-base">
+          {title}
+        </h3>
+
+        <p className="mt-2 break-words text-sm leading-6 text-black/55">
+          {text}
+        </p>
       </div>
     </div>
   );
