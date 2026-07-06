@@ -2,15 +2,15 @@ const rcLink = "https://www.gworks.ch";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f5f3ee] text-[#151515]">
+    <main className="min-h-screen overflow-x-hidden bg-[#f5f3ee] text-[#151515]">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f5f3ee]/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-6 md:py-5">
-          <a href="#" className="flex items-center gap-3">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#151515] text-sm font-black text-white">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 md:px-6 md:py-5">
+          <a href="#" className="flex min-w-0 items-center gap-3">
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#151515] text-sm font-black text-white">
               G
             </span>
-            <span className="text-lg font-black tracking-tight md:text-xl">
+            <span className="truncate text-lg font-black tracking-tight md:text-xl">
               G-Works
             </span>
           </a>
@@ -35,12 +35,12 @@ export default function Home() {
           </nav>
 
           {/* Mobile Navigation */}
-          <details className="group relative md:hidden">
+          <details className="group relative shrink-0 md:hidden">
             <summary className="flex cursor-pointer list-none items-center rounded-full border border-black/15 bg-white px-4 py-2 text-sm font-bold shadow-sm">
               Menü
             </summary>
 
-            <div className="absolute right-0 mt-3 w-64 overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/15">
+            <div className="absolute right-0 mt-3 w-[calc(100vw-2.5rem)] max-w-72 overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/15">
               <nav className="flex flex-col p-2 text-sm font-semibold text-black/70">
                 <a
                   href="#leistungen"
@@ -90,10 +90,16 @@ export default function Home() {
         <div className="absolute right-[20px] top-[110px] h-[90px] w-[90px] rounded-full border border-black/10 md:right-[90px] md:top-[120px] md:h-[120px] md:w-[120px]" />
         <div className="absolute bottom-[60px] left-[-130px] h-[220px] w-[220px] rounded-full border border-black/10 md:bottom-[90px] md:left-[-110px] md:h-[260px] md:w-[260px]" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <div>
-            <p className="mb-5 inline-flex max-w-full rounded-full border border-black/10 bg-white/80 px-4 py-2 text-sm font-medium text-black/60 shadow-sm backdrop-blur">
-              CAD-Design · 3D-Druck · Prototypen · Ersatzteile
+        <div className="relative mx-auto grid max-w-7xl min-w-0 gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="min-w-0">
+            <p className="mb-5 inline-flex max-w-full flex-wrap gap-x-2 gap-y-1 rounded-2xl border border-black/10 bg-white/80 px-4 py-2 text-xs font-medium leading-5 text-black/60 shadow-sm backdrop-blur sm:rounded-full sm:text-sm">
+              <span>CAD-Design</span>
+              <span>·</span>
+              <span>3D-Druck</span>
+              <span>·</span>
+              <span>Prototypen</span>
+              <span>·</span>
+              <span>Ersatzteile</span>
             </p>
 
             <h1 className="max-w-4xl text-4xl font-black leading-[1.02] tracking-tight sm:text-5xl md:text-7xl">
@@ -111,14 +117,14 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10">
               <a
                 href="#kontakt"
-                className="rounded-full bg-[#151515] px-7 py-4 text-center font-semibold text-white transition hover:bg-black"
+                className="w-full rounded-full bg-[#151515] px-7 py-4 text-center font-semibold text-white transition hover:bg-black sm:w-auto"
               >
                 Projekt anfragen
               </a>
 
               <a
                 href="#leistungen"
-                className="rounded-full border border-black/15 bg-white/80 px-7 py-4 text-center font-semibold text-black transition hover:border-black/30"
+                className="w-full rounded-full border border-black/15 bg-white/80 px-7 py-4 text-center font-semibold text-black transition hover:border-black/30 sm:w-auto"
               >
                 Leistungen ansehen
               </a>
@@ -132,7 +138,7 @@ export default function Home() {
           </div>
 
           {/* Technische Prozesskarte */}
-          <div className="rounded-[1.5rem] border border-black/10 bg-white/80 p-4 shadow-xl shadow-black/5 backdrop-blur md:rounded-[2rem] md:p-5">
+          <div className="min-w-0 rounded-[1.5rem] border border-black/10 bg-white/80 p-4 shadow-xl shadow-black/5 backdrop-blur md:rounded-[2rem] md:p-5">
             <div className="relative overflow-hidden rounded-[1.25rem] border border-black/10 bg-[#fbfaf7] p-5 md:rounded-[1.5rem] md:p-8">
               <div className="absolute inset-0 opacity-[0.3] md:opacity-[0.35]">
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.05)_1px,transparent_1px)] bg-[size:22px_22px] md:bg-[size:24px_24px]" />
@@ -140,7 +146,7 @@ export default function Home() {
 
               <div className="relative">
                 <div className="mb-8 flex items-start justify-between gap-4 md:mb-10 md:gap-6">
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-xs font-bold uppercase tracking-[0.25em] text-orange-600 md:tracking-[0.3em]">
                       Arbeitsweise
                     </p>
@@ -290,7 +296,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.13)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.13)_1px,transparent_1px)] bg-[size:24px_24px] md:bg-[size:26px_26px]" />
             </div>
 
-            <div className="relative">
+            <div className="relative min-w-0">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-orange-400">
                 Spezialbereich
               </p>
@@ -315,7 +321,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="relative rounded-[1.25rem] border border-white/10 bg-white/5 p-5 backdrop-blur md:rounded-[1.5rem] md:p-7">
+            <div className="relative min-w-0 rounded-[1.25rem] border border-white/10 bg-white/5 p-5 backdrop-blur md:rounded-[1.5rem] md:p-7">
               <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <h3 className="text-2xl font-black">ASW 28 V2</h3>
 
@@ -389,7 +395,7 @@ export default function Home() {
       <section id="kontakt" className="px-5 py-16 md:px-6 md:py-24">
         <div className="mx-auto max-w-7xl rounded-[1.5rem] border border-black/10 bg-white p-6 shadow-xl shadow-black/5 md:rounded-[2rem] md:p-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:gap-10">
-            <div>
+            <div className="min-w-0">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-orange-600">
                 Kontakt
               </p>
@@ -405,17 +411,17 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 md:gap-4">
+            <div className="flex min-w-0 flex-col gap-3 md:gap-4">
               <a
                 href="mailto:fabian.graf@live.de"
-                className="rounded-full bg-[#151515] px-7 py-4 text-center font-semibold text-white transition hover:bg-black"
+                className="w-full rounded-full bg-[#151515] px-7 py-4 text-center font-semibold text-white transition hover:bg-black"
               >
                 Anfrage per E-Mail starten
               </a>
 
               <a
                 href={rcLink}
-                className="rounded-full border border-black/15 bg-white px-7 py-4 text-center font-semibold text-black transition hover:border-black/30"
+                className="w-full rounded-full border border-black/15 bg-white px-7 py-4 text-center font-semibold text-black transition hover:border-black/30"
               >
                 G-Works RC ansehen
               </a>
@@ -425,7 +431,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-black/10 px-5 py-8 text-center text-sm text-black/40 md:px-6">
-        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-6">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-3 sm:flex-row sm:gap-6">
           <span>© G-Works · CAD-Design & 3D-Druck · Liechtenstein</span>
 
           <div className="flex gap-4">
@@ -444,7 +450,7 @@ export default function Home() {
 
 function MiniStat({ number, label }: { number: string; label: string }) {
   return (
-    <div className="rounded-2xl border border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur">
+    <div className="min-w-0 rounded-2xl border border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur">
       <div className="text-lg font-black">{number}</div>
       <div className="mt-1 text-xs font-medium text-black/50">{label}</div>
     </div>
@@ -461,12 +467,12 @@ function ProcessLine({
   text: string;
 }) {
   return (
-    <div className="grid grid-cols-[44px_1fr] gap-3 rounded-2xl border border-black/10 bg-white/80 p-4 shadow-sm md:grid-cols-[48px_1fr] md:gap-4">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 text-sm font-black text-white">
+    <div className="grid min-w-0 grid-cols-[44px_1fr] gap-3 rounded-2xl border border-black/10 bg-white/80 p-4 shadow-sm md:grid-cols-[48px_1fr] md:gap-4">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-500 text-sm font-black text-white">
         {number}
       </div>
 
-      <div>
+      <div className="min-w-0">
         <h3 className="font-black">{title}</h3>
         <p className="mt-1 text-sm leading-6 text-black/55">{text}</p>
       </div>
@@ -476,7 +482,7 @@ function ProcessLine({
 
 function ServiceCard({ title, text }: { title: string; text: string }) {
   return (
-    <div className="rounded-[1.5rem] border border-black/10 bg-[#f8f7f3] p-6 transition hover:-translate-y-1 hover:border-orange-500/40 hover:shadow-xl hover:shadow-black/5 md:p-7">
+    <div className="min-w-0 rounded-[1.5rem] border border-black/10 bg-[#f8f7f3] p-6 transition hover:-translate-y-1 hover:border-orange-500/40 hover:shadow-xl hover:shadow-black/5 md:p-7">
       <div className="mb-6 h-2 w-12 rounded-full bg-orange-500 md:mb-8" />
       <h3 className="text-xl font-black md:text-2xl">{title}</h3>
       <p className="mt-4 leading-7 text-black/60">{text}</p>
@@ -494,7 +500,7 @@ function Step({
   text: string;
 }) {
   return (
-    <div className="rounded-[1.5rem] border border-black/10 bg-[#f8f7f3] p-6 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-black/5 md:p-7">
+    <div className="min-w-0 rounded-[1.5rem] border border-black/10 bg-[#f8f7f3] p-6 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-black/5 md:p-7">
       <div className="mb-5 text-sm font-black text-orange-600 md:mb-6">
         {number}
       </div>
