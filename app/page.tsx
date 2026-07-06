@@ -1,3 +1,5 @@
+const rcLink = "https://www.gworks.ch";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f5f3ee] text-[#151515]">
@@ -21,7 +23,7 @@ export default function Home() {
             <a href="#ablauf" className="transition hover:text-black">
               Ablauf
             </a>
-            <a href="/asw28" className="transition hover:text-black">
+            <a href={rcLink} className="transition hover:text-black">
               G-Works RC
             </a>
             <a href="#kontakt" className="transition hover:text-black">
@@ -137,7 +139,9 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8 rounded-2xl border border-black/10 bg-[#151515] p-5 text-white">
-                  <p className="text-sm text-white/55">Konstruiert und gedruckt</p>
+                  <p className="text-sm text-white/55">
+                    Konstruiert und gedruckt
+                  </p>
                   <p className="mt-1 text-2xl font-black">in Liechtenstein.</p>
                 </div>
               </div>
@@ -252,15 +256,15 @@ export default function Home() {
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-white/65">
                 RC-Modellbau bleibt ein Spezialgebiet von G-Works. Die ASW 28 V2
-                Upgrade-Parts sind eine eigene Produktlinie aus einem echten
-                Entwicklungsprojekt.
+                Upgrade-Parts sind aktuell provisorisch über die bestehende
+                G-Works RC Seite erreichbar.
               </p>
 
               <a
-                href="/asw28"
+                href={rcLink}
                 className="mt-8 inline-flex rounded-full bg-orange-500 px-7 py-4 font-semibold text-black transition hover:bg-orange-400"
               >
-                ASW 28 V2 Produkte ansehen
+                G-Works RC öffnen
               </a>
             </div>
 
@@ -280,6 +284,13 @@ export default function Home() {
                 <li>Haubensicherung vorne und hinten</li>
                 <li>Upgrade-Kits</li>
               </ul>
+
+              <a
+                href={rcLink}
+                className="mt-8 inline-flex rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-orange-400 hover:text-orange-400"
+              >
+                ASW 28 V2 Produkte ansehen
+              </a>
             </div>
           </div>
         </div>
@@ -356,7 +367,7 @@ export default function Home() {
               </a>
 
               <a
-                href="/asw28"
+                href={rcLink}
                 className="rounded-full border border-black/15 bg-white px-7 py-4 text-center font-semibold text-black transition hover:border-black/30"
               >
                 G-Works RC ansehen
