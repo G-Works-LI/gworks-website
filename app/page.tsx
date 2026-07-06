@@ -378,8 +378,19 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-black/10 px-6 py-8 text-center text-sm text-black/40">
-        © G-Works · CAD-Design & 3D-Druck · Liechtenstein
-      </footer>
+  <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-6">
+    <span>© G-Works · CAD-Design & 3D-Druck · Liechtenstein</span>
+
+    <div className="flex gap-4">
+      <a href="/impressum" className="transition hover:text-black">
+        Impressum
+      </a>
+      <a href="/datenschutz" className="transition hover:text-black">
+        Datenschutz
+      </a>
+    </div>
+  </div>
+</footer>
     </main>
   );
 }
