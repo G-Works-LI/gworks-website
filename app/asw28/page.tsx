@@ -524,29 +524,33 @@ export default function ASW28Page() {
       </section>
 
       {/* Kontakt */}
-      <section id="kontakt" className="bg-[#111] px-5 py-16 text-center md:px-6 md:py-24">
-        <div className="mx-auto max-w-3xl">
-          <p className="mb-4 text-sm font-black uppercase tracking-[0.25em] text-orange-400">
-            Kontakt
-          </p>
+<section id="kontakt" className="bg-[#111] px-5 py-16 text-center md:px-6 md:py-24">
+  <div className="mx-auto max-w-3xl">
+    <p className="mb-4 text-sm font-black uppercase tracking-[0.25em] text-orange-400">
+      Kontakt
+    </p>
 
-          <h2 className="text-3xl font-black tracking-tight md:text-5xl">
-            Händleranfrage oder Direktanfrage.
-          </h2>
+    <h2 className="text-3xl font-black tracking-tight md:text-5xl">
+      Händleranfrage oder Direktanfrage.
+    </h2>
 
-          <p className="mt-6 leading-7 text-white/65 md:text-lg md:leading-8">
-            Interesse an einer Zusammenarbeit, einem Upgrade-Kit oder einer
-            Sonderlösung für dein Modell? Kontaktiere G-Works direkt.
-          </p>
+    <p className="mt-6 leading-7 text-white/65 md:text-lg md:leading-8">
+      Interesse an einer Zusammenarbeit, einem Upgrade-Kit oder einer
+      Sonderlösung für dein Modell? Kontaktiere G-Works direkt.
+    </p>
 
-          <a
-            href="mailto:info"
-            className="mt-8 inline-flex w-full justify-center rounded-full bg-orange-500 px-7 py-4 font-black text-black no-underline transition hover:bg-orange-400 sm:w-auto"
-          >
-            E-Mail senden
-          </a>
-        </div>
-      </section>
+    <p className="mt-6 text-lg font-black text-orange-400">
+      info@gworks.li
+    </p>
+
+    <a
+      href="mailto:info@gworks.li?subject=Anfrage%20zu%20G-Works%20RC%20ASW%2028%20V2"
+      className="mt-8 inline-flex w-full justify-center rounded-full bg-orange-500 px-7 py-4 font-black text-black no-underline transition hover:bg-orange-400 sm:w-auto"
+    >
+      E-Mail an G-Works senden
+    </a>
+  </div>
+</section>
 
       <footer className="border-t border-white/10 px-5 py-8 text-center text-sm text-white/40">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-3 sm:flex-row sm:gap-6">
