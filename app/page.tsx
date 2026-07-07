@@ -1,14 +1,16 @@
 const rcLink = "/asw28";
+
 export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#f5f3ee] text-[#151515]">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f5f3ee]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 md:px-6 md:py-5">
-          <a href="#" className="flex min-w-0 items-center gap-3">
+          <a href="/" className="flex min-w-0 items-center gap-3">
             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#151515] text-sm font-black text-white">
               G
             </span>
+
             <span className="truncate text-lg font-black tracking-tight md:text-xl">
               G-Works
             </span>
@@ -19,15 +21,19 @@ export default function Home() {
             <a href="#leistungen" className="transition hover:text-black">
               Leistungen
             </a>
+
             <a href="#anwendungen" className="transition hover:text-black">
               Anwendungen
             </a>
+
             <a href="#ablauf" className="transition hover:text-black">
               Ablauf
             </a>
+
             <a href={rcLink} className="transition hover:text-black">
               G-Works RC
             </a>
+
             <a href="#kontakt" className="transition hover:text-black">
               Kontakt
             </a>
@@ -47,24 +53,28 @@ export default function Home() {
                 >
                   Leistungen
                 </a>
+
                 <a
                   href="#anwendungen"
                   className="rounded-xl px-4 py-3 transition hover:bg-black/5 hover:text-black"
                 >
                   Anwendungen
                 </a>
+
                 <a
                   href="#ablauf"
                   className="rounded-xl px-4 py-3 transition hover:bg-black/5 hover:text-black"
                 >
                   Ablauf
                 </a>
+
                 <a
                   href={rcLink}
                   className="rounded-xl px-4 py-3 transition hover:bg-black/5 hover:text-black"
                 >
                   G-Works RC
                 </a>
+
                 <a
                   href="#kontakt"
                   className="rounded-xl px-4 py-3 transition hover:bg-black/5 hover:text-black"
@@ -102,15 +112,17 @@ export default function Home() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-black leading-[1.02] tracking-tight sm:text-5xl md:text-7xl">
-              Technische Bauteile
+              CAD Design & 3D-Druck
               <br />
-              <span className="text-orange-600">für echte Probleme.</span>
+              <span className="text-orange-600">
+                für funktionale Bauteile.
+              </span>
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-7 text-black/65 md:mt-8 md:text-lg md:leading-8">
-              G-Works entwickelt individuelle CAD-Bauteile, 3D-gedruckte
-              Prototypen, Ersatzteile und funktionale Speziallösungen —
-              konstruiert und 3D-gedruckt in Liechtenstein.
+              G-Works konstruiert und fertigt individuelle Bauteile,
+              Prototypen, Ersatzteile und Kleinserien. Von der ersten Idee bis
+              zum brauchbaren 3D-gedruckten Teil — entwickelt in Liechtenstein.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10">
@@ -122,10 +134,10 @@ export default function Home() {
               </a>
 
               <a
-                href="#leistungen"
+                href="#ablauf"
                 className="w-full rounded-full border border-black/15 bg-white/80 px-7 py-4 text-center font-semibold text-black transition hover:border-black/30 sm:w-auto"
               >
-                Leistungen ansehen
+                So funktioniert es
               </a>
             </div>
 
@@ -190,6 +202,7 @@ export default function Home() {
                   <p className="text-sm text-white/55">
                     Konstruiert und gedruckt
                   </p>
+
                   <p className="mt-1 text-xl font-black md:text-2xl">
                     in Liechtenstein.
                   </p>
@@ -278,6 +291,7 @@ export default function Home() {
                 className="group rounded-2xl border border-black/10 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-orange-500/40 hover:shadow-xl hover:shadow-black/5 md:p-6"
               >
                 <div className="mb-6 h-2 w-10 rounded-full bg-orange-500 transition group-hover:w-16 md:mb-8" />
+
                 <h3 className="text-lg font-black md:text-xl">{item}</h3>
               </div>
             ))}
@@ -305,9 +319,10 @@ export default function Home() {
               </h2>
 
               <p className="mt-5 max-w-2xl text-base leading-7 text-white/65 md:mt-6 md:text-lg md:leading-8">
-                RC-Modellbau bleibt ein Spezialgebiet von G-Works. Die ASW 28 V2
-                Upgrade-Parts sind aktuell provisorisch über die bestehende
-                G-Works RC Seite erreichbar.
+                RC-Modellbau ist ein Spezialbereich von G-Works. Die ASW 28 V2
+                Upgrade-Parts wurden direkt am Modell entwickelt, getestet und
+                für praxisnahe Montage, Haltbarkeit und Servicefreundlichkeit
+                optimiert.
               </p>
 
               <a
@@ -403,14 +418,18 @@ export default function Home() {
 
               <p className="mt-5 max-w-2xl text-base leading-7 text-black/60 md:mt-6 md:text-lg md:leading-8">
                 Sende eine Anfrage mit Foto, Skizze, Massangaben oder
-                Beschreibung. Ich prüfe, ob sich dein Teil sinnvoll konstruieren
-                und 3D-drucken lässt.
+                Beschreibung. Ich prüfe, ob sich dein Teil sinnvoll
+                konstruieren und 3D-drucken lässt.
+              </p>
+
+              <p className="mt-5 text-lg font-black text-orange-600">
+                info@gworks.li
               </p>
             </div>
 
             <div className="flex min-w-0 flex-col gap-3 md:gap-4">
               <a
-                href="mailto:info@gworks.li"
+                href="mailto:info@gworks.li?subject=Anfrage%20an%20G-Works"
                 className="w-full rounded-full bg-[#151515] px-7 py-4 text-center font-semibold text-white transition hover:bg-black"
               >
                 Anfrage per E-Mail starten
@@ -435,6 +454,7 @@ export default function Home() {
             <a href="/impressum" className="transition hover:text-black">
               Impressum
             </a>
+
             <a href="/datenschutz" className="transition hover:text-black">
               Datenschutz
             </a>
@@ -486,7 +506,9 @@ function ServiceCard({ title, text }: { title: string; text: string }) {
   return (
     <div className="min-w-0 rounded-[1.5rem] border border-black/10 bg-[#f8f7f3] p-6 transition hover:-translate-y-1 hover:border-orange-500/40 hover:shadow-xl hover:shadow-black/5 md:p-7">
       <div className="mb-6 h-2 w-12 rounded-full bg-orange-500 md:mb-8" />
+
       <h3 className="text-xl font-black md:text-2xl">{title}</h3>
+
       <p className="mt-4 leading-7 text-black/60">{text}</p>
     </div>
   );
@@ -506,7 +528,9 @@ function Step({
       <div className="mb-5 text-sm font-black text-orange-600 md:mb-6">
         {number}
       </div>
+
       <h3 className="text-xl font-black md:text-2xl">{title}</h3>
+
       <p className="mt-4 leading-7 text-black/60">{text}</p>
     </div>
   );
