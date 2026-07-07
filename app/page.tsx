@@ -355,7 +355,7 @@ export default function Home() {
               </p>
 
               <h2 className="text-3xl font-black tracking-tight sm:text-4xl md:text-5xl">
-                Für Menschen und Betriebe mit echten technischen Problemen.
+                Für Kunden und Betriebe, die praktische Lösungen für individuelle Bauteile benötigen.
               </h2>
 
               <p className="mt-6 text-base leading-7 text-black/60 md:text-lg md:leading-8">
