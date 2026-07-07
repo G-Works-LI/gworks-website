@@ -1,27 +1,5 @@
 const rcLink = "/asw28";
 
-const targetGroups = [
-  "Modellbauer",
-  "Handwerker",
-  "Velowerkstätten",
-  "Garagen",
-  "Landwirte",
-  "Haustechnik-Betriebe",
-  "Kleine Maschinenbetriebe",
-  "Hobbyisten",
-];
-
-const problemCases = [
-  "Teil gebrochen",
-  "Ersatzteil nicht mehr lieferbar",
-  "Halter passt nicht",
-  "Adapter fehlt",
-  "Abdeckung beschädigt",
-  "Sonderteil wird benötigt",
-  "Idee soll als Prototyp getestet werden",
-  "Bauteil muss verbessert werden",
-];
-
 export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#f5f3ee] text-[#151515]">
@@ -46,10 +24,6 @@ export default function Home() {
 
             <a href="#anwendungen" className="transition hover:text-black">
               Anwendungen
-            </a>
-
-            <a href="#fuer-wen" className="transition hover:text-black">
-              Für wen?
             </a>
 
             <a href="#ablauf" className="transition hover:text-black">
@@ -85,13 +59,6 @@ export default function Home() {
                   className="rounded-xl px-4 py-3 transition hover:bg-black/5 hover:text-black"
                 >
                   Anwendungen
-                </a>
-
-                <a
-                  href="#fuer-wen"
-                  className="rounded-xl px-4 py-3 transition hover:bg-black/5 hover:text-black"
-                >
-                  Für wen?
                 </a>
 
                 <a
@@ -335,97 +302,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Für wen ist G-Works? */}
-      <section
-        id="fuer-wen"
-        className="relative overflow-hidden border-y border-black/10 bg-white px-5 py-16 md:px-6 md:py-24"
-      >
-        <div className="absolute inset-0 opacity-[0.18]">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.055)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.055)_1px,transparent_1px)] bg-[size:26px_26px]" />
-        </div>
-
-        <div className="absolute right-[-140px] top-[-120px] h-[280px] w-[280px] rounded-full border border-orange-500/20" />
-        <div className="absolute bottom-[-120px] left-[-120px] h-[260px] w-[260px] rounded-full border border-black/10" />
-
-        <div className="relative mx-auto max-w-7xl">
-          <div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
-            <div>
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-orange-600">
-                Für wen ist G-Works?
-              </p>
-
-              <h2 className="text-3xl font-black tracking-tight sm:text-4xl md:text-5xl">
-                Für Menschen und Betriebe mit echten technischen Problemen.
-              </h2>
-
-              <p className="mt-6 text-base leading-7 text-black/60 md:text-lg md:leading-8">
-                G-Works richtet sich an alle, die praktische Lösungen für
-                konkrete Bauteile suchen. Oft fehlt nur ein einzelnes Teil, ein
-                Adapter, eine Halterung oder eine Abdeckung — und genau dort
-                beginnt die Arbeit.
-              </p>
-
-              <div className="mt-7 rounded-[1.5rem] border border-orange-500/25 bg-orange-500/10 p-5 md:p-6">
-                <p className="text-lg font-black leading-7 text-[#151515] md:text-xl">
-                  Ein einzelnes funktionales Bauteil kann oft mehr lösen als ein
-                  kompletter Neukauf.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid gap-6">
-              <div className="rounded-[1.5rem] border border-black/10 bg-[#f8f7f3] p-5 shadow-sm md:rounded-[2rem] md:p-7">
-                <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                  <h3 className="text-2xl font-black">Typische Kunden</h3>
-
-                  <span className="w-fit rounded-full border border-black/10 bg-white px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-black/50">
-                    Praxisnah
-                  </span>
-                </div>
-
-                <div className="grid gap-3 sm:grid-cols-2">
-                  {targetGroups.map((group) => (
-                    <div
-                      key={group}
-                      className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm"
-                    >
-                      <p className="font-black">{group}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="rounded-[1.5rem] border border-black/10 bg-[#151515] p-5 text-white shadow-xl shadow-black/10 md:rounded-[2rem] md:p-7">
-                <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                  <h3 className="text-2xl font-black">Typische Fälle</h3>
-
-                  <span className="w-fit rounded-full border border-orange-500/40 bg-orange-500/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-orange-300">
-                    Ersatzteile & Lösungen
-                  </span>
-                </div>
-
-                <div className="grid gap-3 sm:grid-cols-2">
-                  {problemCases.map((item) => (
-                    <div
-                      key={item}
-                      className="rounded-2xl border border-white/10 bg-white/5 p-4"
-                    >
-                      <p className="font-semibold text-white/80">{item}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <p className="mt-6 leading-7 text-white/60">
-                  Senden Sie einfach ein Foto, eine Skizze oder die wichtigsten
-                  Maße. Ich prüfe, ob sich eine sinnvolle CAD- und
-                  3D-Drucklösung umsetzen lässt.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* G-Works RC */}
       <section className="px-5 py-16 md:px-6 md:py-24">
         <div className="mx-auto max-w-7xl overflow-hidden rounded-[1.5rem] bg-[#111111] text-white shadow-2xl shadow-black/20 md:rounded-[2rem]">
@@ -597,6 +473,34 @@ function MiniStat({ number, label }: { number: string; label: string }) {
     <div className="min-w-0 rounded-2xl border border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur">
       <div className="text-lg font-black">{number}</div>
       <div className="mt-1 text-xs font-medium text-black/50">{label}</div>
+    </div>
+  );
+}
+
+function ProcessLine({
+  number,
+  title,
+  text,
+}: {
+  number: string;
+  title: string;
+  text: string;
+}) {
+  return (
+    <div className="flex min-w-0 flex-col gap-4 rounded-2xl border border-black/10 bg-white/80 p-4 shadow-sm sm:flex-row sm:items-start">
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-orange-500 text-sm font-black text-white sm:h-10 sm:w-10">
+        {number}
+      </div>
+
+      <div className="min-w-0">
+        <h3 className="break-words text-lg font-black leading-tight sm:text-base">
+          {title}
+        </h3>
+
+        <p className="mt-2 break-words text-sm leading-6 text-black/55">
+          {text}
+        </p>
+      </div>
     </div>
   );
 }
