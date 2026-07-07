@@ -164,52 +164,50 @@ export default function ASW28Page() {
         </div>
       </header>
 
-      {/* Hero Bild */}
-      <section className="px-5 py-8 md:px-6 md:py-12">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-[1.5rem] border border-orange-500/20 bg-[#111] shadow-2xl shadow-black/40 md:rounded-[2rem]">
-          <div className="relative min-h-[360px] md:min-h-[520px]">
-            <img
-              src="/images/modell-asw-28-v2-volantex-v5.jpg"
-              alt="Volantex ASW 28 V2"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
+{/* Hero */}
+<section className="px-5 py-10 md:px-6 md:py-16">
+  <div className="mx-auto max-w-7xl">
+    <div className="mb-8 max-w-5xl">
+      <p className="mb-4 text-xs font-black uppercase tracking-[0.28em] text-orange-400 md:text-sm">
+        G-Works RC · ASW 28 V2
+      </p>
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-black/10" />
+      <h1 className="text-4xl font-black leading-[1.02] tracking-tight md:text-7xl">
+        Upgrade Parts für die{" "}
+        <span className="text-orange-500">ASW 28 V2.</span>
+      </h1>
 
-            <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
-              <p className="mb-4 text-xs font-black uppercase tracking-[0.28em] text-orange-400 md:text-sm">
-                G-Works RC
-              </p>
+      <p className="mt-6 max-w-3xl text-base leading-7 text-white/70 md:text-lg md:leading-8">
+        Praxiserprobte 3D-gedruckte Zubehörteile für bessere Haltbarkeit,
+        einfachere Wartung und mehr Sicherheit.
+      </p>
 
-              <h1 className="max-w-4xl text-4xl font-black leading-[1.02] tracking-tight md:text-7xl">
-                Upgrade Parts für die{" "}
-                <span className="text-orange-500">ASW 28 V2.</span>
-              </h1>
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a
+          href="#produkte"
+          className="w-full rounded-full bg-orange-500 px-7 py-4 text-center font-bold text-black transition hover:bg-orange-400 sm:w-auto"
+        >
+          Produkte ansehen
+        </a>
 
-              <p className="mt-6 max-w-2xl text-base leading-7 text-white/70 md:text-lg md:leading-8">
-                Praxiserprobte 3D-gedruckte Zubehörteile für bessere
-                Haltbarkeit, einfachere Wartung und mehr Sicherheit.
-              </p>
+        <a
+          href="#kontakt"
+          className="w-full rounded-full border border-white/20 px-7 py-4 text-center font-bold text-white transition hover:border-orange-400 hover:text-orange-400 sm:w-auto"
+        >
+          Anfrage starten
+        </a>
+      </div>
+    </div>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="#produkte"
-                  className="w-full rounded-full bg-orange-500 px-7 py-4 text-center font-bold text-black transition hover:bg-orange-400 sm:w-auto"
-                >
-                  Produkte ansehen
-                </a>
-
-                <a
-                  href="#kontakt"
-                  className="w-full rounded-full border border-white/20 px-7 py-4 text-center font-bold text-white transition hover:border-orange-400 hover:text-orange-400 sm:w-auto"
-                >
-                  Anfrage starten
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="overflow-hidden rounded-[1.5rem] border border-orange-500/20 bg-[#111] shadow-2xl shadow-black/40 md:rounded-[2rem]">
+      <img
+        src="/images/modell-asw-28-v2-volantex-v5.jpg"
+        alt="Volantex ASW 28 V2"
+        className="h-auto w-full object-cover"
+      />
+    </div>
+  </div>
+</section>
 
       {/* Intro */}
       <section className="border-y border-white/10 bg-[#111] px-5 py-16 md:px-6 md:py-24">
