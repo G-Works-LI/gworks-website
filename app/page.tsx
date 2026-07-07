@@ -148,65 +148,68 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Technische Prozesskarte */}
-          <div className="min-w-0 rounded-[1.5rem] border border-black/10 bg-white/80 p-4 shadow-xl shadow-black/5 backdrop-blur md:rounded-[2rem] md:p-5">
-            <div className="relative overflow-hidden rounded-[1.25rem] border border-black/10 bg-[#fbfaf7] p-5 md:rounded-[1.5rem] md:p-8">
-              <div className="absolute inset-0 opacity-[0.3] md:opacity-[0.35]">
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.05)_1px,transparent_1px)] bg-[size:22px_22px] md:bg-[size:24px_24px]" />
+          {/* Hero Visual */}
+          <div className="min-w-0 rounded-[1.5rem] border border-black/10 bg-white/80 p-4 shadow-2xl shadow-black/10 backdrop-blur md:rounded-[2rem] md:p-5">
+            <div className="relative overflow-hidden rounded-[1.25rem] border border-black/10 bg-[#fbfaf7] md:rounded-[1.5rem]">
+              <div className="absolute inset-0 opacity-[0.35]">
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.055)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.055)_1px,transparent_1px)] bg-[size:24px_24px]" />
               </div>
 
-              <div className="relative">
-                <div className="mb-8 flex items-start justify-between gap-4 md:mb-10 md:gap-6">
-                  <div className="min-w-0">
-                    <p className="text-xs font-bold uppercase tracking-[0.25em] text-orange-600 md:tracking-[0.3em]">
-                      Arbeitsweise
+              <div className="relative p-5 md:p-7">
+                <div className="mb-5 flex flex-wrap items-center gap-2">
+                  <span className="rounded-full bg-orange-500 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white">
+                    CAD Entwicklung
+                  </span>
+
+                  <span className="rounded-full border border-black/10 bg-white/70 px-3 py-1 text-xs font-bold text-black/55">
+                    Konstruktion
+                  </span>
+
+                  <span className="rounded-full border border-black/10 bg-white/70 px-3 py-1 text-xs font-bold text-black/55">
+                    Prototyp
+                  </span>
+                </div>
+
+                <div className="relative overflow-hidden rounded-[1rem] border border-black/10 bg-white">
+                  <img
+                    src="/images/windrad-cad-transparent.png"
+                    alt="G-Works CAD Windrad Konstruktion"
+                    className="h-auto w-full object-contain"
+                  />
+                </div>
+
+                <div className="mt-5 grid gap-3 sm:grid-cols-3">
+                  <div className="rounded-2xl border border-black/10 bg-white/80 p-4">
+                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-black/40">
+                      01
                     </p>
-
-                    <h2 className="mt-3 max-w-[15rem] text-2xl font-black leading-[1.08] sm:max-w-none md:text-3xl">
-                      Von der Idee zum fertigen Bauteil.
-                    </h2>
+                    <p className="mt-2 font-black">CAD</p>
                   </div>
 
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-orange-500/40 bg-orange-500/10 text-lg font-black text-orange-600 md:h-16 md:w-16 md:text-xl">
-                    3D
+                  <div className="rounded-2xl border border-black/10 bg-white/80 p-4">
+                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-black/40">
+                      02
+                    </p>
+                    <p className="mt-2 font-black">Druck</p>
+                  </div>
+
+                  <div className="rounded-2xl border border-black/10 bg-white/80 p-4">
+                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-black/40">
+                      03
+                    </p>
+                    <p className="mt-2 font-black">Bauteil</p>
                   </div>
                 </div>
+              </div>
 
-                <div className="space-y-3 md:space-y-4">
-                  <ProcessLine
-                    number="01"
-                    title="Problem verstehen"
-                    text="Foto, Skizze, Masse oder Beschreibung."
-                  />
+              <div className="relative border-t border-black/10 bg-[#151515] p-5 text-white md:p-6">
+                <p className="text-sm text-white/55">
+                  Technische Entwicklung
+                </p>
 
-                  <ProcessLine
-                    number="02"
-                    title="CAD-Konstruktion"
-                    text="Bauteil digital entwickeln und prüfen."
-                  />
-
-                  <ProcessLine
-                    number="03"
-                    title="Material und Druck"
-                    text="Sinnvolle Materialwahl und FDM-Produktion."
-                  />
-
-                  <ProcessLine
-                    number="04"
-                    title="Fertiges Bauteil"
-                    text="Einzelteil, Prototyp oder Kleinserie."
-                  />
-                </div>
-
-                <div className="mt-6 rounded-2xl border border-black/10 bg-[#151515] p-5 text-white md:mt-8">
-                  <p className="text-sm text-white/55">
-                    Konstruiert und gedruckt
-                  </p>
-
-                  <p className="mt-1 text-xl font-black md:text-2xl">
-                    in Liechtenstein.
-                  </p>
-                </div>
+                <p className="mt-1 text-xl font-black md:text-2xl">
+                  Von der Idee zur funktionalen Lösung.
+                </p>
               </div>
             </div>
           </div>
