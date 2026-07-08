@@ -221,8 +221,7 @@ export default function Home() {
 
           <div className="mt-10 rounded-3xl border border-[#ff7a00]/30 bg-[#ff7a00]/10 p-6">
             <p className="text-lg font-bold text-white">
-              Kurz gesagt: G-Works verkauft nicht einfach Druckteile — G-Works
-              entwickelt praktische Bauteillösungen.
+              Der Fertigungsweg richtet sich nach dem Bauteil.
             </p>
           </div>
         </div>
