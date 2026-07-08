@@ -37,21 +37,6 @@ const manufacturingWays = [
   },
 ];
 
-const aboutPoints = [
-  {
-    title: "Praktisch gedacht",
-    text: "Bauteile werden nicht nur gezeichnet, sondern für echte Anwendung entwickelt.",
-  },
-  {
-    title: "Sauber konstruiert",
-    text: "CAD-Modelle und STEP-Daten bilden die Grundlage für 3D-Druck oder weitere Fertigungswege.",
-  },
-  {
-    title: "Lokal aufgebaut",
-    text: "G-Works entsteht in Liechtenstein — klein, direkt und lösungsorientiert.",
-  },
-];
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f6f3ee] text-[#171717]">
@@ -72,9 +57,6 @@ export default function Home() {
           <nav className="hidden items-center gap-7 text-sm font-medium text-black/65 md:flex">
             <a className="transition hover:text-black" href="#leistungen">
               Leistungen
-            </a>
-            <a className="transition hover:text-black" href="#ueber">
-              Über G-Works
             </a>
             <a className="transition hover:text-black" href="#fertigungswege">
               Fertigungswege
@@ -200,58 +182,6 @@ export default function Home() {
             title="Ersatzteile & Verbesserungen"
             text="Nachbau, Anpassung oder Verbesserung von Teilen, die nicht mehr erhältlich sind oder besser funktionieren sollen."
           />
-        </div>
-      </section>
-
-      <section id="ueber" className="bg-white/55 px-6 py-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-10 md:grid-cols-[0.95fr_1.05fr] md:items-start">
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#ff7a00]">
-                Über G-Works
-              </p>
-              <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">
-                Technische Lösungen, CAD-Konstruktion und praktische Fertigung
-                aus Liechtenstein.
-              </h2>
-            </div>
-
-            <div>
-              <div className="rounded-[2rem] border border-black/10 bg-[#f6f3ee] p-7 shadow-sm">
-                <p className="text-lg leading-8 text-black/70">
-                  G-Works ist ein kleines technisches Projekt aus Liechtenstein
-                  mit Fokus auf CAD Design, 3D-Druck, Prototypen, Ersatzteile
-                  und funktionale Bauteile.
-                </p>
-
-                <p className="mt-5 text-lg leading-8 text-black/70">
-                  Im Mittelpunkt steht nicht die Massenproduktion, sondern die
-                  praktische Lösung: ein Teil, das fehlt, nicht passt, gebrochen
-                  ist oder verbessert werden soll.
-                </p>
-
-                <p className="mt-5 text-lg leading-8 text-black/70">
-                  Von der ersten Idee über die Konstruktion bis zum brauchbaren
-                  Bauteil verbindet G-Works digitales Design mit handwerklichem
-                  Verständnis und realer Anwendung.
-                </p>
-              </div>
-
-              <div className="mt-6 grid gap-4 sm:grid-cols-3">
-                {aboutPoints.map((item) => (
-                  <div
-                    key={item.title}
-                    className="rounded-2xl border border-black/10 bg-white/70 p-5 shadow-sm"
-                  >
-                    <h3 className="font-black">{item.title}</h3>
-                    <p className="mt-3 text-sm leading-6 text-black/60">
-                      {item.text}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -412,26 +342,10 @@ export default function Home() {
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-4">
-          <Step
-            number="01"
-            title="Problem zeigen"
-            text="Foto, Skizze, Musterteil oder kurze Beschreibung senden."
-          />
-          <Step
-            number="02"
-            title="Lösung planen"
-            text="Machbarkeit, Material, Belastung und Fertigungsweg klären."
-          />
-          <Step
-            number="03"
-            title="CAD erstellen"
-            text="Das Teil wird digital konstruiert und für die Fertigung vorbereitet."
-          />
-          <Step
-            number="04"
-            title="Teil fertigen"
-            text="Fertigung im 3D-Druck oder Vorbereitung sauberer Daten für weitere Fertigungswege."
-          />
+          <Step number="01" title="Problem zeigen" text="Foto, Skizze, Musterteil oder kurze Beschreibung senden." />
+          <Step number="02" title="Lösung planen" text="Machbarkeit, Material, Belastung und Fertigungsweg klären." />
+          <Step number="03" title="CAD erstellen" text="Das Teil wird digital konstruiert und für die Fertigung vorbereitet." />
+          <Step number="04" title="Teil fertigen" text="Fertigung im 3D-Druck oder Vorbereitung sauberer Daten für weitere Fertigungswege." />
         </div>
       </section>
 
