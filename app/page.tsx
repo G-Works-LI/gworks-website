@@ -55,53 +55,62 @@ const aboutPoints = [
 export default function Home() {
   return (
     <main className="min-h-screen w-full overflow-x-hidden bg-[#f6f3ee] text-[#171717]">
-      <header className="sticky top-0 z-50 w-full overflow-x-hidden border-b border-black/10 bg-[#f6f3ee]/90 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
-          <a href="#" className="group flex min-w-0 items-center gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#171717] text-sm font-bold text-white shadow-sm">
-              GW
-            </div>
-            <div className="min-w-0">
-              <div className="truncate text-lg font-bold tracking-tight">
-                G-Works
-              </div>
-              <div className="max-w-[220px] text-xs uppercase tracking-[0.18em] text-black/50 sm:max-w-none sm:tracking-[0.22em]">
-                CAD · 3D-Druck · Technik
-              </div>
-            </div>
-          </a>
-
-          <nav className="hidden items-center gap-7 text-sm font-medium text-black/65 md:flex">
-            <a className="transition hover:text-black" href="#leistungen">
-              Leistungen
-            </a>
-            <a className="transition hover:text-black" href="#ueber">
-              Über G-Works
-            </a>
-            <a className="transition hover:text-black" href="#fertigungswege">
-              Fertigungswege
-            </a>
-            <a className="transition hover:text-black" href="#anwendungen">
-              Anwendungen
-            </a>
-            <a className="transition hover:text-black" href="#fuer-wen">
-              Für wen?
-            </a>
-            <a className="transition hover:text-black" href="#ablauf">
-              Ablauf
-            </a>
-            <a className="transition hover:text-black" href={rcLink}>
-              G-Works RC
-            </a>
-            <a
-              className="rounded-full bg-[#171717] px-4 py-2 text-white transition hover:bg-black"
-              href="#kontakt"
-            >
-              Kontakt
-            </a>
-          </nav>
+<header className="sticky top-0 z-50 w-full overflow-x-hidden border-b border-black/10 bg-[#f6f3ee]/90 backdrop-blur">
+  <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
+    <a href="#" className="group flex min-w-0 items-center gap-3">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#171717] text-sm font-bold text-white shadow-sm">
+        GW
+      </div>
+      <div className="min-w-0">
+        <div className="truncate text-lg font-bold tracking-tight">
+          G-Works
         </div>
-      </header>
+        <div className="max-w-[220px] text-xs uppercase tracking-[0.18em] text-black/50 sm:max-w-none sm:tracking-[0.22em]">
+          CAD · 3D-Druck · Technik
+        </div>
+      </div>
+    </a>
+
+    <a
+      className="hidden rounded-full bg-[#171717] px-4 py-2 text-sm font-medium text-white transition hover:bg-black sm:inline-flex"
+      href="#kontakt"
+    >
+      Kontakt
+    </a>
+  </div>
+
+  <nav className="w-full overflow-x-auto border-t border-black/5 px-4 pb-3 sm:px-6">
+    <div className="mx-auto flex w-max max-w-7xl items-center gap-5 whitespace-nowrap text-sm font-medium text-black/65 sm:gap-7">
+      <a className="transition hover:text-black" href="#leistungen">
+        Leistungen
+      </a>
+      <a className="transition hover:text-black" href="#ueber">
+        Über G-Works
+      </a>
+      <a className="transition hover:text-black" href="#fertigungswege">
+        Fertigungswege
+      </a>
+      <a className="transition hover:text-black" href="#anwendungen">
+        Anwendungen
+      </a>
+      <a className="transition hover:text-black" href="#fuer-wen">
+        Für wen?
+      </a>
+      <a className="transition hover:text-black" href="#ablauf">
+        Ablauf
+      </a>
+      <a className="transition hover:text-black" href={rcLink}>
+        G-Works RC
+      </a>
+      <a
+        className="rounded-full bg-[#171717] px-4 py-2 text-white transition hover:bg-black sm:hidden"
+        href="#kontakt"
+      >
+        Kontakt
+      </a>
+    </div>
+  </nav>
+</header>
 
       <section className="relative w-full overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,122,0,0.18),transparent_36%),radial-gradient(circle_at_bottom_left,rgba(0,0,0,0.10),transparent_32%)]" />
